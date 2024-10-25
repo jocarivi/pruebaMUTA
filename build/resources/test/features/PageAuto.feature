@@ -19,7 +19,7 @@ Feature: MUTA navigator
     Given The user navigate to mutaworld.com
     When The user navigates to the Contactanos subpage
     And The user fills out the form with invalid information
-    Then The user successfully simulates sending the form
+    Then User simulates form submission failure
     Then The form is cleared
 
 

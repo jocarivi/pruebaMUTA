@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -66,7 +67,7 @@ public class PrincipalPageMuta extends PageMuta {
 
         ((JavascriptExecutor) driver).executeScript("alert('Formulario enviado exitosamente');");
         try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             wait.until(ExpectedConditions.alertIsPresent());
             Alert alert = driver.switchTo().alert();
             alert.accept();
@@ -78,9 +79,10 @@ public class PrincipalPageMuta extends PageMuta {
     }
 
     public void simulateFormFailureSubmission(){
-        ((JavascriptExecutor) driver).executeScript("alert('Formulario incorrecto, campos vacios');");
+
+        ((JavascriptExecutor) driver).executeScript("alert('Formulario incorrecto o campos vacios');");
         try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             wait.until(ExpectedConditions.alertIsPresent());
             Alert alert = driver.switchTo().alert();
             alert.accept();

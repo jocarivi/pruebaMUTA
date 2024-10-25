@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">18.278s</div>
+<div class="counter">18.524s</div>
 <p>duration</p>
 </div>
 </td>
@@ -82,17 +82,17 @@
 </thead>
 <tr>
 <td class="success">The user can access the contact us subpage and fill in the form correctly.</td>
-<td class="success">2.933s</td>
+<td class="success">3.142s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">The user can access the contact us subpage and fill in the form incorrectly. #1</td>
-<td class="success">12.307s</td>
+<td class="success">12.348s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">The user can access the contact us subpage and fill in the form incorrectly. #2</td>
-<td class="success">3.038s</td>
+<td class="success">3.034s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -102,12 +102,12 @@
 <span class="code">
 <pre>
 Scenario: The user can access the contact us subpage and fill in the form incorrectly. ?[90m# src/test/resources/features/PageAuto.feature:4?[0m
-05:49:09.361 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
-05:49:09.618 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=130 in cache (valid until 06:37:13 25/10/2024 COT)
-05:49:09.619 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome130=130.0.6723.69 in cache (valid until 03:33:11 26/10/2024 COT)
-05:49:09.620 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.69 (resolved driver for Chrome 130)
-05:49:09.651 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 130.0.6723.69 found in cache
-05:49:09.653 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jcricardo\.cache\selenium\chromedriver\win64\130.0.6723.69\chromedriver.exe
+07:01:00.551 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
+07:01:00.824 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=130 in cache (valid until 07:47:25 25/10/2024 COT)
+07:01:00.825 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome130=130.0.6723.69 in cache (valid until 03:33:11 26/10/2024 COT)
+07:01:00.826 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.69 (resolved driver for Chrome 130)
+07:01:00.848 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 130.0.6723.69 found in cache
+07:01:00.850 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jcricardo\.cache\selenium\chromedriver\win64\130.0.6723.69\chromedriver.exe
   ?[32mGiven ?[0m?[32mThe user navigate to mutaworld.com?[0m                                             ?[90m# steps.PageMutaSteps.iNavigateToMutaPrincipal()?[0m
   ?[32mWhen ?[0m?[32mThe user navigates to the Contactanos subpage?[0m                                   ?[90m# steps.PageMutaSteps.iNavigateToContactUsPage()?[0m
   ?[32mAnd ?[0m?[32mThe user does not fill in the form?[0m                                               ?[90m# steps.PageMutaSteps.iEmptyForm()?[0m
@@ -125,7 +125,7 @@ Scenario: The user can access the contact us subpage and fill in the form incorr
   ?[32mGiven ?[0m?[32mThe user navigate to mutaworld.com?[0m                                             ?[90m# steps.PageMutaSteps.iNavigateToMutaPrincipal()?[0m
   ?[32mWhen ?[0m?[32mThe user navigates to the Contactanos subpage?[0m                                   ?[90m# steps.PageMutaSteps.iNavigateToContactUsPage()?[0m
   ?[32mAnd ?[0m?[32mThe user fills out the form with invalid information?[0m                             ?[90m# steps.PageMutaSteps.iFillOutTheFormWithInvalidInformation()?[0m
-  ?[32mThen ?[0m?[32mThe user successfully simulates sending the form?[0m                                ?[90m# steps.PageMutaSteps.iSimulateSuccessfulFormSubmission()?[0m
+  ?[32mThen ?[0m?[32mUser simulates form submission failure?[0m                                          ?[90m# steps.PageMutaSteps.iSimulateFailureFormSubmission()?[0m
   ?[32mThen ?[0m?[32mThe form is cleared?[0m                                                             ?[90m# steps.PageMutaSteps.iFormCleared()?[0m
 </pre>
 </span>
@@ -133,7 +133,7 @@ Scenario: The user can access the contact us subpage and fill in the form incorr
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>oct. 25, 2024 5:49:12 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+<pre>oct. 25, 2024 7:01:04 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 128; Please update to a Selenium version that supports CDP version 130
 </pre>
 </span>
@@ -146,7 +146,7 @@ WARNING: Unable to find an exact match for CDP version 130, returning the closes
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.10</a> at 25/10/2024, 5:49:28 a. m.</p>
+<a href="http://www.gradle.org">Gradle 8.10</a> at 25/10/2024, 7:01:19 a. m.</p>
 </div>
 </div>
 </body>
